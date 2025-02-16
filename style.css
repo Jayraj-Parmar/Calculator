@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Comic Neue", cursive;
+  font-weight: bold;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #000000de;
+  height: 100%;
+  /* position: sticky; */
+}
+.navbar {
+  width: 100%;
+  height: 10%;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+}
+.navbar h1 {
+  margin: 0;
+  font-size: 5vh;
+  padding: 20px 20px;
+}
+.calc {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  /* background-color: yellow; */
+  position: relative;
+}
+.display {
+  display: flex;
+  flex-direction: column;
+}
+.display input {
+  background-color: rgba(0, 0, 0, 0.321);
+  padding: 1vh;
+  border: 0px;
+}
+.display .arithmaric {
+  margin: 0vh 1vh;
+  margin-top: 10px;
+  height: 5vh;
+  color: rgb(161, 161, 161);
+  font-size: 3vh;
+  text-align: right;
+}
+.display .number {
+  margin: 0vh 1vh;
+  height: 8vh;
+  color: white;
+  font-size: 6vh;
+  text-align: right;
+}
+.key {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+.button {
+  color: rgb(255, 255, 255);
+  font-size: 5vh;
+  background-color: #4f4e4e3f;
+  border-radius: 1.2vh;
+  text-align: center;
+  height: 10vh;
+  cursor: pointer;
+  margin-left: 0.3vh;
+  margin-bottom: 0.3vh;
+  border-color: rgb(95, 95, 95);
+}
+.button:hover {
+  background-color: #88888844;
+}
+.button.equal {
+  background-color: rgb(96, 192, 252);
+  font-size: 7vh;
+}
+.button.clicked {
+  background-color: #000000;
+}
+.button.equal.clicked {
+  background-color: #00a2ff;
+}
